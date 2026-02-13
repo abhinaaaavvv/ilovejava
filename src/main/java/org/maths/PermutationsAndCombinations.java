@@ -3,8 +3,8 @@ package org.maths;
 import java.util.Scanner;
 
 public class PermutationsAndCombinations {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(final String[] args) {
+        final Scanner in = new Scanner(System.in);
         int n, r;
 
         System.out.print("Enter n: ");
@@ -13,8 +13,8 @@ public class PermutationsAndCombinations {
         System.out.print("Enter r: ");
         r = in.nextInt();
 
-        int permutation = factorial(n) / factorial(n - r);
-        int combination = factorial(n) / (factorial(r) * factorial(n - r));
+        final int permutation = factorial(n) / factorial(n - r);
+        final int combination = factorial(n) / (factorial(r) * factorial(n - r));
 
         System.out.println();
         System.out.println("The permutations are: " + permutation);
@@ -22,7 +22,7 @@ public class PermutationsAndCombinations {
         in.close();
     }
 
-    static int factorial(int n) {
+    static int factorial(final int n) {
         if (n == 0 || n == 1) {
             return 1;
         }

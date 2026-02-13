@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Binary {
 
     public static void main(final String[] args) {
-        // take input as n
+
         final Scanner in = new Scanner(System.in);
         System.out.print("Enter a number in decimal: ");
         final long n = in.nextLong();
