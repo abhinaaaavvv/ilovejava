@@ -15,12 +15,12 @@ public class Binary {
         return Integer.parseInt(binary);
     }
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(final String[] args) {
+        final Scanner in = new Scanner(System.in);
         System.out.println("Enter a number in decimal");
-        int n = in.nextInt();
+        final int n = in.nextInt();
 
-        int binary = toBinary(n);
+        final int binary = toBinary(n);
         System.out.println(binary);
 
         in.close();
