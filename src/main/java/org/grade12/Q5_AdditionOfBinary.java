@@ -1,8 +1,8 @@
-package org;
+package org.grade12;
 
 import java.util.Scanner;
 
-public class AdditionOfBinary {
+public class Q5_AdditionOfBinary {
 
     public static String addBinary(String a, String b) {
         String result = "";
@@ -11,8 +11,10 @@ public class AdditionOfBinary {
         int j = b.length() - 1;
         while (i >= 0 || j >= 0 || carry == 1) {
             int sum = carry;
-            if (i >= 0) sum += a.charAt(i--) - '0';
-            if (j >= 0) sum += b.charAt(j--) - '0';
+            if (i >= 0)
+                sum += a.charAt(i--) - '0';
+            if (j >= 0)
+                sum += b.charAt(j--) - '0';
             result = (sum % 2) + result;
             carry = sum / 2;
         }
