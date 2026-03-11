@@ -1,8 +1,8 @@
-package org;
+package org.grade11;
 
 import java.util.Scanner;
 
-public class Binary {
+public class Q10_Binary {
 
     public static int toBinary(int n) {
         String binary = "";
